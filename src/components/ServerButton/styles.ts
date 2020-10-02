@@ -32,7 +32,7 @@ export const Button = styled.button<Props>`
     background-color: var(--white);
     border-radius: 50%;
     display: ${(props) => (props.hasNotifications ? "inline" : "none")};
-    content: '';
+    content: "";
   }
 
   &::after {
@@ -49,8 +49,9 @@ export const Button = styled.button<Props>`
     font-size: 13px;
     font-weight: bold;
     color: var(--white);
-    content: '${props => props.mentions && props.mentions}';
-    display: ${props => props.mentions && props.mentions > 0 ? 'inline' : 'none'}
+    content: "${(props) => props.mentions && props.mentions}";
+    display: ${(props) =>
+      props.mentions && props.mentions > 0 ? "inline" : "none"};
   }
 
   &.active,

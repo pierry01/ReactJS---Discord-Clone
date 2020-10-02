@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.div`
   grid-area: SL;
   display: flex;
   flex-direction: column;
@@ -10,11 +10,13 @@ export const Container = styled.div `
   height: 100vh;
   overflow-y: scroll;
 
-  ::-webkit-scrollbar { display: none };
-`
+  ::-webkit-scrollbar {
+    display: none;
+  }
+`;
 
-export const Separator = styled.div `
+export const Separator = styled.div`
   width: 32px;
   border-bottom: 2px solid var(--quaternary);
   margin-bottom: 8px;
-`
+`;
